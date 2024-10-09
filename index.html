@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript - Hide Circles</title>
+
+        <style type="text/css">
+            .circle {
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+                float: left;
+                margin-right: 50px;
+                background-color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+
+    </body>
+
+    <script type="text/javascript">
+
+        var n_circles = 0
+
+        let create_circle_button = document.createElement("button")
+        create_circle_button.appendChild(document.createTextNode("GERAR NOVO CÍRCULO"))
+        create_circle_button.setAttribute("id", "create-circle-button")
+        document.body.appendChild(create_circle_button)
+        document.body.appendChild(document.createElement("br"))
+        document.body.appendChild(document.createElement("br"))
+
+        create_circle("red")
+        create_circle("blue")
+        create_circle("yellow")
+
+
+        document.getElementById("create-circle-button").onclick = function () {
+
+            color = Math.floor(Math.random()*3)
+            if(color == 0) {
+                color = "red"
+            } else if (color == 1) {
+                color = "blue"
+            } else {
+                color = "yellow"
+            }
+
+            create_circle(color)
+        };
+
+        // make all circles visible again.
+        window.onkeydown = function (event) {
+            if (event.ctrlKey && event.key === "Escape") {
+                document.getElementById("red-circle").style.display =
+                    "block";
+                document.getElementById("yellow-circle").style.display =
+                    "block";
+                document.getElementById("blue-circle").style.display =
+                    "block";
+            }
+        };
+
+        function create_circle (color) {
+            let new_circle = document.createElement("div")
+            new_circle.setAttribute("id", `${n_circles}-circle`)
+            new_circle.setAttribute("class", "circle")
+            new_circle.style.backgroundColor = color
+
+            let id_string = `${n_circles}-circle`
+            new_circle.onclick = function () {
+                document.getElementById(id_string).style.display = "none";
+            };
+            document.body.appendChild(new_circle)
+            n_circles = n_circles + 1
+        }
+    </script>
+
+</html>
