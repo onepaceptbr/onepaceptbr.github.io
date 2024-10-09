@@ -11,6 +11,24 @@
             color: white;
             text-align: center;
         }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .image-container {
+            margin-right: 20px;
+        }
+        .image-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .arcos-container {
+            display: flex;
+            flex-direction: column;
+        }
         .arco {
             background-color: #1e2a33;
             border-radius: 10px;
@@ -20,8 +38,6 @@
             align-items: center;
             justify-content: center; /* Centraliza horizontalmente */
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
             text-decoration: none;
             color: white;
         }
@@ -45,49 +61,59 @@
 
     <h1>One Pace - Legendas em Português</h1>
     <p>Projeto que deixa ONE PIECE igual ao mangá.</p>
-    <p>Arquivos com senha (Arcos 1 ao 6): otto.fansub@2024</p>
+    <p>Arquivos com senha: otto.fansub@2024</p>
 
-     <a href="https://drive.google.com/file/d/1SB56eln3K7Ci6IcsL-jW7Tg0V7qN956G/view" class="arco" target="_blank">
-        <img src="romance_dawn_icon.png" alt="Romance Dawn">
-        <div class="info">
-            <h3>Arco 1 - Romance Dawn</h3>
+    <div class="container">
+        <!-- Container da Imagem -->
+        <div class="image-container">
+            <img src="https://ugc.production.linktr.ee/2ac048ae-b233-4452-8966-93ca963561a1_2024-10-04-22-25-22-One-Piece-Long-Ring-Long-Land-Foxy-The-Pirate-Smiling.png--1760-1080-.png?io=true&size=avatar-v3_0" alt="One Piece Image">
         </div>
-    </a>
 
-    <a href="#" class="arco">
-        <img src="orange_town_icon.png" alt="Orange Town">
-        <div class="info">
-            <h3>Arco 2 - Orange Town</h3>
-        </div>
-    </a>
+        <!-- Container dos Arcos -->
+        <div class="arcos-container">
+            <a href="https://drive.google.com/file/d/1SB56eln3K7Ci6IcsL-jW7Tg0V7qN956G/view" class="arco" target="_blank">
+                <img src="romance_dawn_icon.png" alt="Romance Dawn">
+                <div class="info">
+                    <h3>Arco 1 - Romance Dawn</h3>
+                </div>
+            </a>
 
-    <a href="#" class="arco">
-        <img src="vila_syrup_icon.png" alt="Vila Syrup">
-        <div class="info">
-            <h3>Arco 3 - Vila Syrup</h3>
-        </div>
-    </a>
+            <a href="#" class="arco">
+                <img src="orange_town_icon.png" alt="Orange Town">
+                <div class="info">
+                    <h3>Arco 2 - Orange Town</h3>
+                </div>
+            </a>
 
-    <a href="#" class="arco">
-        <img src="gaimon_icon.png" alt="Gaimon">
-        <div class="info">
-            <h3>Arco 4 - Gaimon</h3>
-        </div>
-    </a>
+            <a href="#" class="arco">
+                <img src="vila_syrup_icon.png" alt="Vila Syrup">
+                <div class="info">
+                    <h3>Arco 3 - Vila Syrup</h3>
+                </div>
+            </a>
 
-    <a href="#" class="arco">
-        <img src="baratie_icon.png" alt="Baratie">
-        <div class="info">
-            <h3>Arco 5 - Baratie</h3>
-        </div>
-    </a>
+            <a href="#" class="arco">
+                <img src="gaimon_icon.png" alt="Gaimon">
+                <div class="info">
+                    <h3>Arco 4 - Gaimon</h3>
+                </div>
+            </a>
 
-    <a href="#" class="arco">
-        <img src="arlong_park_icon.png" alt="Arlong Park">
-        <div class="info">
-            <h3>Arco 6 - Arlong Park</h3>
+            <a href="#" class="arco">
+                <img src="baratie_icon.png" alt="Baratie">
+                <div class="info">
+                    <h3>Arco 5 - Baratie</h3>
+                </div>
+            </a>
+
+            <a href="#" class="arco">
+                <img src="arlong_park_icon.png" alt="Arlong Park">
+                <div class="info">
+                    <h3>Arco 6 - Arlong Park</h3>
+                </div>
+            </a>
         </div>
-    </a>
+    </div>
 
 </body>
 
