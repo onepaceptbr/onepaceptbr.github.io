@@ -11,37 +11,17 @@
             color: white;
             text-align: center;
         }
-        .container {
-            display: flex;
-            justify-content: flex-start; /* Move a imagem para a esquerda */
-            align-items: flex-start;
-            margin-top: 20px;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .image-container {
-            margin-right: 40px; /* Ajusta o espaçamento entre a imagem e os tiles */
-        }
-        .image-container img {
-            width: 300px;
-            height: auto;
-            border-radius: 10px;
-        }
-        .arcos-container {
-            display: flex;
-            flex-direction: column;
-            max-width: 600px; /* Garante o tamanho original dos tiles */
-        }
         .arco {
             background-color: #1e2a33;
             border-radius: 10px;
-            margin: 10px 0;
+            margin: 10px;
             padding: 10px;
             display: flex;
             align-items: center;
-            justify-content: flex-start; /* Mantém o alinhamento do conteúdo dos arcos */
-            width: 100%; /* Ajusta a largura dos tiles */
+            justify-content: center; /* Centraliza horizontalmente */
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
             text-decoration: none;
             color: white;
         }
@@ -49,10 +29,10 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            margin-right: 20px; /* Espaço entre a imagem e o texto */
+            margin-right: 20px; /* Adiciona um espaço entre a imagem e o texto */
         }
         .arco .info {
-            text-align: left; /* Texto alinhado à esquerda dentro do tile */
+            text-align: center; /* Centraliza o texto dentro do bloco */
             flex-grow: 1;
         }
         .arco:hover {
@@ -65,54 +45,50 @@
 
     <h1>One Pace - Legendas em Português</h1>
     <p>Projeto que deixa ONE PIECE igual ao mangá.</p>
-    <p>Arquivos com senha (Arcos 1 a 6): otto.fansub@2024</p>
+    <p>Arquivos com senha: otto.fansub@2024</p>
 
-
-        <!-- Container dos Arcos -->
-        <div class="arcos-container">
-            <a href="https://drive.google.com/file/d/1SB56eln3K7Ci6IcsL-jW7Tg0V7qN956G/view" class="arco" target="_blank">
-                <img src="romance_dawn_icon.png" alt="Romance Dawn">
-                <div class="info">
-                    <h3>Arco 1 - Romance Dawn</h3>
-                </div>
-            </a>
-
-            <a href="#" class="arco">
-                <img src="orange_town_icon.png" alt="Orange Town">
-                <div class="info">
-                    <h3>Arco 2 - Orange Town</h3>
-                </div>
-            </a>
-
-            <a href="#" class="arco">
-                <img src="vila_syrup_icon.png" alt="Vila Syrup">
-                <div class="info">
-                    <h3>Arco 3 - Vila Syrup</h3>
-                </div>
-            </a>
-
-            <a href="#" class="arco">
-                <img src="gaimon_icon.png" alt="Gaimon">
-                <div class="info">
-                    <h3>Arco 4 - Gaimon</h3>
-                </div>
-            </a>
-
-            <a href="#" class="arco">
-                <img src="baratie_icon.png" alt="Baratie">
-                <div class="info">
-                    <h3>Arco 5 - Baratie</h3>
-                </div>
-            </a>
-
-            <a href="#" class="arco">
-                <img src="arlong_park_icon.png" alt="Arlong Park">
-                <div class="info">
-                    <h3>Arco 6 - Arlong Park</h3>
-                </div>
-            </a>
+    <!-- Primeiro tile redireciona para o link do Google Drive -->
+    <a href="https://drive.google.com/file/d/1SB56eln3K7Ci6IcsL-jW7Tg0V7qN956G/view" class="arco" target="_blank">
+        <img src="romance_dawn_icon.png" alt="Romance Dawn">
+        <div class="info">
+            <h3>Arco 1 - Romance Dawn</h3>
         </div>
-    </div>
+    </a>
+
+    <a href="#" class="arco">
+        <img src="orange_town_icon.png" alt="Orange Town">
+        <div class="info">
+            <h3>Arco 2 - Orange Town</h3>
+        </div>
+    </a>
+
+    <a href="#" class="arco">
+        <img src="vila_syrup_icon.png" alt="Vila Syrup">
+        <div class="info">
+            <h3>Arco 3 - Vila Syrup</h3>
+        </div>
+    </a>
+
+    <a href="#" class="arco">
+        <img src="gaimon_icon.png" alt="Gaimon">
+        <div class="info">
+            <h3>Arco 4 - Gaimon</h3>
+        </div>
+    </a>
+
+    <a href="#" class="arco">
+        <img src="baratie_icon.png" alt="Baratie">
+        <div class="info">
+            <h3>Arco 5 - Baratie</h3>
+        </div>
+    </a>
+
+    <a href="#" class="arco">
+        <img src="arlong_park_icon.png" alt="Arlong Park">
+        <div class="info">
+            <h3>Arco 6 - Arlong Park</h3>
+        </div>
+    </a>
 
 </body>
 
