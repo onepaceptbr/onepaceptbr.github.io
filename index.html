@@ -13,12 +13,15 @@
         }
         .container {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start; /* Move a imagem para a esquerda */
             align-items: flex-start;
             margin-top: 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .image-container {
-            margin-right: 20px;
+            margin-right: 40px; /* Ajusta o espaçamento entre a imagem e os tiles */
         }
         .image-container img {
             width: 300px;
@@ -32,12 +35,12 @@
         .arco {
             background-color: #1e2a33;
             border-radius: 10px;
-            margin: 10px;
+            margin: 10px 0;
             padding: 10px;
             display: flex;
             align-items: center;
-            justify-content: center; /* Centraliza horizontalmente */
-            max-width: 600px;
+            justify-content: flex-start; /* Mantém o alinhamento do conteúdo dos arcos */
+            width: 400px; /* Mantém o tamanho fixo dos tiles */
             text-decoration: none;
             color: white;
         }
@@ -45,10 +48,10 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            margin-right: 20px; /* Adiciona um espaço entre a imagem e o texto */
+            margin-right: 20px; /* Espaço entre a imagem e o texto */
         }
         .arco .info {
-            text-align: center; /* Centraliza o texto dentro do bloco */
+            text-align: left; /* Texto alinhado à esquerda dentro do tile */
             flex-grow: 1;
         }
         .arco:hover {
