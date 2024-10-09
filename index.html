@@ -1,79 +1,115 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Javascript - Hide Circles</title>
 
-        <style type="text/css">
-            .circle {
-                width: 130px;
-                height: 130px;
-                border-radius: 50%;
-                float: left;
-                margin-right: 50px;
-                background-color: black;
-            }
-        </style>
-    </head>
+<html lang="en">
 
-    <body>
+<head>
 
-    </body>
-
-    <script type="text/javascript">
-
-        var n_circles = 0
-
-        let create_circle_button = document.createElement("button")
-        create_circle_button.appendChild(document.createTextNode("GERAR NOVO CÍRCULO"))
-        create_circle_button.setAttribute("id", "create-circle-button")
-        document.body.appendChild(create_circle_button)
-        document.body.appendChild(document.createElement("br"))
-        document.body.appendChild(document.createElement("br"))
-
-        create_circle("red")
-        create_circle("blue")
-        create_circle("yellow")
+<link href="foto.png" rel="icon" type="images/icon type">
+<title>God of War</title>
 
 
-        document.getElementById("create-circle-button").onclick = function () {
+</head>
 
-            color = Math.floor(Math.random()*3)
-            if(color == 0) {
-                color = "red"
-            } else if (color == 1) {
-                color = "blue"
-            } else {
-                color = "yellow"
-            }
+<body>
+<h1 class='display-3'><center>God of War</center></h1>
 
-            create_circle(color)
-        };
 
-        // make all circles visible again.
-        window.onkeydown = function (event) {
-            if (event.ctrlKey && event.key === "Escape") {
-                document.getElementById("red-circle").style.display =
-                    "block";
-                document.getElementById("yellow-circle").style.display =
-                    "block";
-                document.getElementById("blue-circle").style.display =
-                    "block";
-            }
-        };
+<div style="float: right">                
+                        <iframe width="850" height ="576"
+ src="https://www.youtube.com/embed/Dc5xOGS1oJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                
+            </div>
 
-        function create_circle (color) {
-            let new_circle = document.createElement("div")
-            new_circle.setAttribute("id", `${n_circles}-circle`)
-            new_circle.setAttribute("class", "circle")
-            new_circle.style.backgroundColor = color
+<img src="https://sm.ign.com/t/ign_br/review/g/god-of-war/god-of-war-3-remastered-review_ecmu.1024.jpg" class="img-fluid" alt="gow" class="rounded" /><br /><br />
 
-            let id_string = `${n_circles}-circle`
-            new_circle.onclick = function () {
-                document.getElementById(id_string).style.display = "none";
-            };
-            document.body.appendChild(new_circle)
-            n_circles = n_circles + 1
-        }
-    </script>
+
+
+
+<section>
+<p style="width: 1000px; text-align: justify" ;>
+	<font face="arial" size="4">
+
+          God of War é uma série de jogos eletrônicos de ação-aventura criada por David Jaffe da Santa Monica Studio, da Sony. Iniciada em 2005 no console PlayStation 2 (PS2), tornou-se carro-chefe para a marca PlayStation, consistindo em oito jogos em várias plataformas, com um nono atualmente em desenvolvimento.<br /><br /> Baseada em distintas mitologias, a história segue Kratos, um guerreiro espartano que foi levado a matar sua família por seu antigo mestre, o deus da guerra Ares. Isso desencadeia uma série de eventos que levam à guerras com os panteões mitológicos.<br /><br /> A era da mitologia grega da série mostra Kratos seguindo um caminho de vingança devido às maquinações dos deuses do Olimpo, enquanto a era da mitologia nórdica, que apresenta seu filho Atreus como protagonista secundário, mostra um Kratos mais velho em um caminho de redenção, o que inadvertidamente coloca os dois em conflito com os deuses nórdicos.
+        </p>
+</font>
+        </section>
+
+	<hr />
+<section>
+	<font face="arial" size="4">
+	<ul>
+            <p><b>Principais jogos da franquia</b></p>
+            <li>God of War foi lançado pela primeira vez na América do Norte em 22 de março de 2005, para o PlayStation 2.</li>
+            <li>God of War II foi lançado pela primeira vez na América do Norte em 13 de março de 2007, para o PlayStation 2.</li>
+            <li>God of War: Betrayal foi lançado em 20 de junho de 2007 para celulares que suportam o Java ME. </li>
+	    <li>God of War: Chains of Olympus foi lançado pela primeira vez na América do Norte em 4 de março de 2008, para o PlayStation Portable.  </li>
+	    <li>God of War III foi lançado pela primeira vez na América do Norte em 16 de março de 2010, para o PlayStation 3. </li>
+	    <li>God of War: Ghost of Sparta foi lançado pela primeira vez na América do Norte em 2 de novembro de 2010, para o PlayStation Portable. </li>
+	    <li>God of War: Ascension foi lançado pela primeira vez na América do Norte em 12 de março de 2013, para o PlayStation 3. </li>
+	    <li>God of War foi lançado mundialmente em 20 de abril de 2018, para o PlayStation 4. </li>
+	    <li>God of War Ragnarök foi anunciado em 16 de setembro de 2020 e está previsto para ser lançado em 9 de novembro de 2022 para PlayStation 4 e PlayStation 5 </li>
+          </ul>
+          
+        </section>
+        <hr />
+
+
+<section>
+	<font face="arial" size="4">
+	Os títulos da série foram aclamados como alguns dos melhores jogos de todos os tempos. A franquia recebeu diversos prêmios, incluindo vários reconhecimentos de Jogo do Ano para os títulos de 2005 e 2018. Alguns jogos também foram remasterizados para plataformas mais recentes da PlayStation. Até novembro de 2020, a franquia vendeu mais de 51 milhões de unidades em todo o mundo. As fortes vendas e o suporte da série levaram à expansão da franquia para outras mídias, como três séries de quadrinhos e três romances. Uma adaptação cinematográfica do título original estava em desenvolvimento, mas acabou sendo cancelada. Dentre as mercadorias, incluem artes, roupas, brinquedos e réplicas de adereços, bem como trilhas sonoras de jogos, incluindo um álbum de heavy metal, intitulado Blood & Metal (2010), que apresenta músicas originais de várias bandas inspiradas na franquia.
+          
+
+	<hr />
+ <section>
+          <p><b>Principais aparições em jogos</b></p>
+          <table class="table table-striped">
+            <tr>
+              <th>Jogo</th>
+              <th>Avaliação no Metacritic</th>
+            </tr>
+
+            <tr>
+              <td>God of War</td>
+              <td>94/100</td>
+            </tr>
+
+            <tr>
+              <td>God of War II</td>
+              <td>93/100</td>
+            </tr>
+
+        <tr>
+              <td>God of War: Chains of Olympus</td>
+              <td>91/100</td>
+            </tr>
+<tr>
+              <td>God of War III</td>
+              <td>92/100</td>
+            </tr>
+<tr>
+              <td>God of War: Ghost of Sparta</td>
+              <td>86/100</td>
+            </tr>
+<tr>
+              <td>God of War Ascencion</td>
+              <td>80/100</td>
+            </tr>
+<tr>
+              <td>God of War (2018)</td>
+              <td>94/100</td>
+            </tr>
+          </table>
+        </section>
+        </section>
+        <hr />
+<form action="https://pt.wikipedia.org/wiki/God_of_War">
+        <p>Saiba mais no link abaixo: <br /></p>
+        <p>
+          <input type="submit" value="Conheça God of War!">
+        </p>
+      </form>
+
+
+</body>
 
 </html>
