@@ -47,30 +47,41 @@
         }
 
         .arco {
-            background-color: #1e2a33;
-            border-radius: 10px;
-            margin: 15px auto;
-            padding: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 600px;
-            text-decoration: none;
-            color: white;
-            transition: transform 0.3s ease;
-        }
+    background-color: #1e2a33;
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+    text-align: center; /* Centraliza o texto */
+}
 
-        .arco img {
+    .arco img {
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            margin-right: 20px;
+            margin-right: 0; /* Remove espaçamento lateral */
+            margin-bottom: 10px; /* Adiciona espaçamento entre a imagem e o texto */
         }
-
-        .arco h3 {
+        
+     .arco .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza o conteúdo verticalmente */
+            justify-content: center;
+        }
+        
+       .arco h3 {
             font-size: 1.5em;
             margin: 0;
+            text-align: center; /* Garante que o título fique centralizado */
         }
+
 
         .arco:hover {
             background-color: #243846;
