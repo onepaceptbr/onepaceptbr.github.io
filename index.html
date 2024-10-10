@@ -5,49 +5,74 @@
     <title>One Pace - Legendas PT-BR</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
             background-color: #0f1519;
-            color: white;
+            color: #fff;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
 
-        /* Modificando o estilo da imagem do Foxy */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #00aaff;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            color: #cccccc;
+        }
+
         .foxy-img {
-            width: 100px; /* Ajuste o tamanho conforme necessário */
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            margin-top: 20px; /* Ajuste o espaçamento conforme necessário */
+            margin-top: 20px;
         }
 
         .arco {
             background-color: #1e2a33;
             border-radius: 10px;
-            margin: 10px;
-            padding: 10px;
+            margin: 15px auto;
+            padding: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
             text-decoration: none;
             color: white;
+            transition: transform 0.3s ease;
         }
 
         .arco img {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             margin-right: 20px;
         }
 
-        .arco .info {
-            text-align: center;
-            flex-grow: 1;
+        .arco h3 {
+            font-size: 1.5em;
+            margin: 0;
         }
 
         .arco:hover {
             background-color: #243846;
+            transform: scale(1.05);
+        }
+
+        .info {
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .password-info {
+            font-size: 1em;
+            color: #ffaa00;
+            margin-top: -10px;
         }
     </style>
 </head>
@@ -55,9 +80,10 @@
 <body>
 
     <h1>One Pace - Legendas em Português</h1>
-     <img src="https://ugc.production.linktr.ee/2ac048ae-b233-4452-8966-93ca963561a1_2024-10-04-22-25-22-One-Piece-Long-Ring-Long-Land-Foxy-The-Pirate-Smiling.png--1760-1080-.png" alt="Foxy Image" class="foxy-img">
-    <p>Projeto que deixa ONE PIECE igual ao mangá.</p>
-    <p>Arquivos com senha (Arcos 1 a 6): otto.fansub@2024</p>
+    <img src="https://ugc.production.linktr.ee/2ac048ae-b233-4452-8966-93ca963561a1_2024-10-04-22-25-22-One-Piece-Long-Ring-Long-Land-Foxy-The-Pirate-Smiling.png--1760-1080-.png" alt="Foxy Image" class="foxy-img">
+    
+    <p>Adapte One Piece para o ritmo do mangá com One Pace!</p>
+    <p class="password-info">Senha para os arquivos (Arcos 1 a 6): otto.fansub@2024</p>
 
    
 
