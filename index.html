@@ -46,32 +46,33 @@
             margin-top: 20px;
         }
 
-        .arco {
-            background-color: #1e2a33;
-            border-radius: 10px;
-            margin: 15px auto;
-            padding: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 600px;
-            text-decoration: none;
-            color: white;
-            transition: transform 0.3s ease;
-        }
+    .arco {
+    background-color: #1e2a33;
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Alteração: organiza o conteúdo em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center;
+    max-width: 600px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
 
-        .arco img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
+.arco img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px; /* Ajuste para posicionar a imagem */
+}
 
-        .arco h3 {
-            font-size: 1.5em;
-            margin: 0;
-        }
-
+.arco h3 {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center; /* Centraliza o título */
+}
         .arco:hover {
             background-color: #243846;
             transform: scale(1.05);
