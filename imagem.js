@@ -1,4 +1,4 @@
-const imgSrc = "https://static.wikia.nocookie.net/onepiece/images/a/ad/Diesel_Anime_Infobox.png/revision/latest?cb=20240725230822&path-prefix=pt";
+const imgSrc = "https://ugc.production.linktr.ee/c951f80b-6809-4a1b-8001-dfc1819a7247_2024-10-14-09-42-50-Water-Seven-06.mkv---Reprodutor-de-M-dias-VLC.png";
 
 document.addEventListener("DOMContentLoaded", () => {
     const imageElements = document.querySelectorAll(".foxy-img");
