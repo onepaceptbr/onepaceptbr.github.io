@@ -1,99 +1,90 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="icone_one_pace.png" rel="icon" type="image/png">
     <title>One Pace - Legendas PT-BR</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
-            background-color: #0f1519;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
             color: #fff;
-            text-align: center;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
 
         h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #00aaff;
+            font-size: 3rem;
+            color: #ff8f00;
+            padding: 20px 0;
+            text-shadow: 2px 2px 4px #000;
         }
 
         .section-title {
-            font-size: 2em;
-            color: #ff5555;
-            margin-top: 40px;
-            margin-bottom: 30px;
-            text-align: center;
-            border-bottom: 2px solid #00aaff;
-            padding-bottom: 10px;
-            width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: 2rem;
+            color: #ff8f00;
+            margin: 40px 0;
         }
 
-        p {
-            font-size: 1.2em;
-            margin-top: 5px;
-            margin-bottom: 20px;
-            color: #cccccc;
+        p, .password-info {
+            font-size: 1.2rem;
+            color: #b0bec5;
+            margin: 10px auto;
+            max-width: 800px;
         }
 
         .foxy-img {
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            margin-top: 20px;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 0 8px 2px #ff8f00;
         }
 
         .arco {
-            background-color: #1e2a33;
+            background: #263238;
             border-radius: 10px;
-            margin: 15px auto;
-            padding: 15px;
+            margin: 20px auto;
+            padding: 20px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            max-width: 600px;
+            justify-content: start;
+            max-width: 900px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
             text-decoration: none;
-            color: white;
-            transition: transform 0.3s ease;
-            text-align: center;
-        }
-
-        .arco img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-
-        .arco .info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .arco h3 {
-            font-size: 1.5em;
-            margin: 0;
+            color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.5s ease;
         }
 
         .arco:hover {
-            background-color: #243846;
             transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+        }
+
+        .arco img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
         }
 
         .info {
-            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
             flex-grow: 1;
-        }        
+        }
 
-        .password-info {
-            font-size: 1em;
-            color: #ffaa00;
-            margin-top: -10px;
+        .info h3 {
+            font-size: 1.8rem;
+            margin: 0;
         }
     </style>
     <script src="imagem.js"></script>
@@ -107,7 +98,7 @@
     <p><strong>Projeto que deixa o One Piece igual ao mangá.</strong></p>
     <p class="password-info"><strong>Senha para os arquivos (Arcos 1 a 6): otto.fansub@2024</strong></p>
 
-    <h2 class="section-title">Wano</h2>
+   <h2 class="section-title">Wano</h2>
 
     <h2 class="section-title">Arcos em Planejamento</h2>
   
@@ -118,9 +109,6 @@
             <H3>[até 30/06/2025]</H3>
         </div>
     </a>
-    
-      
-
 </body>
 
-</html> 
+</html>
