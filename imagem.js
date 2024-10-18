@@ -1,4 +1,4 @@
-const imgSrc = "https://ugc.production.linktr.ee/c951f80b-6809-4a1b-8001-dfc1819a7247_2024-10-14-09-42-50-Water-Seven-06.mkv---Reprodutor-de-M-dias-VLC.png";
+const imgSrc = "https://ugc.production.linktr.ee/0657701e-ed6a-4bee-a947-e51b033079b7_2024-10-18-00-36-32-Water-Seven-15---Departing-Shortly---Reprodutor-de-M-dias-VLC.png?io=true&size=avatar-v3_0";
 
 document.addEventListener("DOMContentLoaded", () => {
     const imageElements = document.querySelectorAll(".foxy-img");
