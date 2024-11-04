@@ -1,4 +1,4 @@
-const imgSrc = "https://ugc.production.linktr.ee/710eda2e-30c0-45c0-a888-17bb708667a7_2024-11-02-15-32-20-Thriller-Bark-16.mkv---Reprodutor-de-M-dias-VLC.png?io=true&size=avatar-v3_0";
+const imgSrc = "https://ugc.production.linktr.ee/7a9d5976-d64a-42d3-b8df-f7e42c53d68a_508688cb93baf902215c7ef01d4102ec.jpeg?io=true&size=avatar-v3_0";
 
 document.addEventListener("DOMContentLoaded", () => {
     const imageElements = document.querySelectorAll(".foxy-img");
