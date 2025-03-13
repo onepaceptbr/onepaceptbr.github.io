@@ -1,4 +1,4 @@
-const imgSrc = "https://ugc.production.linktr.ee/51964943-7425-4d76-8b9a-f6b098ca0d17_2024-11-09-17-35-37-Impel-Down-01.mkv---Reprodutor-de-M-dias-VLC.png?io=true&size=avatar-v3_0";
+const imgSrc = "https://i.pinimg.com/474x/44/4d/2c/444d2c02993bc37e7d5cb0ed4eca75d2.jpg";
 
 document.addEventListener("DOMContentLoaded", () => {
     const imageElements = document.querySelectorAll(".foxy-img");
