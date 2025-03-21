@@ -6,143 +6,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="icone_one_pace.png" rel="icon" type="image/png">
     <title>One Pace - Legendas PT-BR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-            color: #fff;
-            margin: 0; 
+            background: linear-gradient(120deg, #121212, #242424);
+            color: #ffffff;
+            margin: 0;
             padding: 0;
-            text-align: center;
         }
 
-        h1 {
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
             font-size: 3rem;
-            color: #ff8f00;
-            padding: 20px 0;
+            color: #00aaff;
             text-shadow: 2px 2px 4px #000;
+            margin: 0;
+        }
+        
+        .break {
+            flex-basis: 100%;
+            height: 0;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            color: #b0b0b0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .section-title {
             font-size: 2rem;
-            color: #ff8f00;
-            margin: 40px 0;
+            color: #00aaff;
+            margin: 50px 0 30px;
+            text-shadow: 1px 1px 2px #000;
+            text-align: center;
         }
 
-        p, .password-info {
-            font-size: 1.2rem;
-            color: #b0bec5;
-            margin: 10px auto;
-            max-width: 800px;
-        }
-
-        .foxy-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin: 20px auto;
-            display: block;
-            box-shadow: 0 0 8px 2px #ff8f00;
-        }
-
-        .arco {
-            background: #263238;
-            border-radius: 10px;
-            margin: 20px auto;
-            padding: 20px;
+        .arc-list {
             display: flex;
-            align-items: center;
-            justify-content: start;
-            max-width: 900px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-            text-decoration: none;
-            color: #fff;
-            transition: transform 0.3s ease, box-shadow 0.5s ease;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
         }
 
-        .arco:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.6);
-        }
-
-        .arco img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-
-        .info {
+        .arc {
+            width: 225px;
+            height: 440px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            flex-grow: 1;
+            justify-content: space-between;
+            background: #181818;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: #fff;
+            align-items: center;
         }
 
-        .info h3 {
-            font-size: 1.8rem;
+        .arc:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.5);
+        }
+
+        .arc img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .arc-info, .info {
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+        }
+
+        .arc-info h3 {
             margin: 0;
+            font-size: 1.3rem;
+        }
+
+        .important-info {
+            background: #202020;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 750px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .important-info p {
+            margin: 8px 0;
+            color: #ddd;
+        }
+
+        .pix-info {
+            font-weight: bold;
+            color: #00ddff;
         }
     </style>
     <script src="imagem.js"></script>
 </head>
 
+
+
 <body>
+    <header>
+        <h1>One Pace - Legendas PT-BR</h1>
+        <p>Projeto que deixa o anime One Piece igual ao mangá</p>
+        <div class="important-info">
+            <p><strong>Senha (Arcos 1-6):</strong> otto.fansub@2024</p>
+            <p class="pix-info">PIX para apoiar o projeto: legendasbronepace@gmail.com</p>
+        </div>
+    </header>
 
-    <h1>One Pace - Legendas em Português</h1>
-    <img src="" alt="Foxy Image" class="foxy-img">
-
-    <p><strong>Projeto que deixa o One Piece igual ao mangá.</strong></p>
-    <p class="password-info"><strong>Senha para os arquivos (Arcos 1 a 6): otto.fansub@2024</strong></p>
-    <p class="password-info"><strong>PIX para ajudar o projeto: legendasbronepace@gmail.com</strong></p>
-
-<h2 class="section-title">Marineford</h2>
-
-     <a href="https://drive.google.com/drive/folders/193e4Tw6yKr6Y2uu6F_xgH3tzXZSyjv9A?usp=sharing" class="arco">
-        <img src="https://ugc.production.linktr.ee/6d405507-9830-4606-91de-927446f6a37c_e9e5dd44d599c9965e7417676718bf55.jpeg" alt="Sabaody Archipelago">
+    <div class="container">
+        <h2 class="section-title">Marineford</h2>
+        <div class="arc-list">
+            
+            
+     <a href="https://drive.google.com/drive/folders/193e4Tw6yKr6Y2uu6F_xgH3tzXZSyjv9A?usp=sharing" class="arc">
+        <img src="https://i.imgur.com/6mCrtgp.png">
         <div class="info">
             <h3>Arco 20 - Sabaody Archipelago</h3>
         </div>
     </a>
 
-    <a href="https://drive.google.com/drive/folders/1WDntFt2JMvOFxNNNUTk1VKY0R1D5zW-w?usp=sharing" class="arco">
-        <img src="https://ugc.production.linktr.ee/100b4d1f-3aec-4408-8ec3-16142081481d_2024-10-05-10-21-46-portugu-s---One-Pace---Discord.png" alt="Amazon Lily">
+    <a href="https://drive.google.com/drive/folders/1WDntFt2JMvOFxNNNUTk1VKY0R1D5zW-w?usp=sharing" class="arc">
+        <img src="https://i.imgur.com/13htMlh.png" alt="Amazon Lily">
         <div class="info">
             <h3>Arco 21 - Amazon Lily</h3>
         </div>
     </a>
 
-    <a href="https://drive.google.com/drive/folders/1CJEqD732E_FAEIzi7HOTMRUPOMEFy-aQ?usp=sharing" class="arco">
-        <img src="https://ugc.production.linktr.ee/2697c4fc-c4b4-437f-9f20-0e0aef2687ba_2024-10-05-10-22-31-latest--908-908-.png" alt="Impel Down">
+    <a href="https://drive.google.com/drive/folders/1CJEqD732E_FAEIzi7HOTMRUPOMEFy-aQ?usp=sharing" class="arc">
+        <img src="https://i.imgur.com/BT6od6e.png" alt="Impel Down">
         <div class="info">
             <h3>Arco 22 - Impel Down</h3>
         </div>
     </a>
     
-    <a href="https://drive.google.com/drive/folders/1Dgwa53hqYJ8DV6Nxr4Ww6HbBfR_HRzQc?usp=sharing" class="arco">
-        <img src="https://ugc.production.linktr.ee/95c1235c-354c-47f3-80b2-8aefbc766b25_2024-10-05-10-23-30-Reddit---https---preview.redd.it-bvvffgnwwax21.jpg-auto-webp-s-e5d8bca6d34eb1dae.png" alt="The Adventures of the Straw Hats">
+    <a href="https://drive.google.com/drive/folders/1Dgwa53hqYJ8DV6Nxr4Ww6HbBfR_HRzQc?usp=sharing" class="arc">
+        <img src="https://i.imgur.com/04PBJH8.png">
         <div class="info">
             <h3>Arco 22.5 - The Adventures of the Straw Hats</h3>
         </div>
     </a>
     
-      <a href="https://drive.google.com/drive/folders/1Gd1CwJFUMVEESJXcp55dlV6oUDmpP0RQ?usp=sharing" class="arco">
-        <img src="https://ugc.production.linktr.ee/c6237410-d656-411c-bd54-ff28a53ae87a_b6df31f8b3c502c3195253b6dbb0bccd.jpeg" alt="Marineford">
+      <a href="https://drive.google.com/drive/folders/1Gd1CwJFUMVEESJXcp55dlV6oUDmpP0RQ?usp=sharing" class="arc">
+        <img src="https://i.imgur.com/m4UnS5d.png" alt="Marineford">
         <div class="info">
             <h3>Arco 23 - Marineford</h3>
         </div>
     </a>    
 
-     <a href="https://drive.google.com/drive/folders/1dQWpxtAZcVfXsRqflNVMOzHCPkoTipMB?usp=sharing" class="arco">
-        <img src="https://ugc.production.linktr.ee/fa1e76e8-7212-41f7-afbe-b5bf3ee31b9a_52c0fade1f65d58e10728f0a12009095.jpeg" alt="Post-War">
+     <a href="https://drive.google.com/drive/folders/1dQWpxtAZcVfXsRqflNVMOzHCPkoTipMB?usp=sharing" class="arc">
+        <img src="https://i.imgur.com/TcdGEor.png">
         <div class="info">
             <h3>Arco 24 - Post-War</h3>
         </div>
-    </a>    
-       
+    </a> 
+        </div>
+    </div>
 </body>
 
 </html>
