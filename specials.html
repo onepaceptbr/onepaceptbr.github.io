@@ -6,121 +6,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="icone_one_pace.png" rel="icon" type="image/png">
     <title>One Pace - Legendas PT-BR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-            color: #fff;
+            background: linear-gradient(120deg, #121212, #242424);
+            color: #ffffff;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
 
-        h1 {
-            font-size: 3rem;
-            color: #ff8f00;
-            padding: 20px 0;
-            text-shadow: 2px 2px 4px #000;
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
         }
+
+        header h1 {
+            font-size: 3rem;
+            color: #00aaff;
+            text-shadow: 2px 2px 4px #000;
+            margin: 0;
+        }
+        
+        .break {
+            flex-basis: 100%;
+            height: 0;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            color: #b0b0b0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .recommendation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.recommendation p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    color: #ddd;
+}
 
         .section-title {
             font-size: 2rem;
-            color: #ff8f00;
-            margin: 40px 0;
+            color: #00aaff;
+            margin: 50px 0 30px;
+            text-shadow: 1px 1px 2px #000;
+            text-align: center;
         }
 
-        p, .password-info {
-            font-size: 1.2rem;
-            color: #b0bec5;
-            margin: 10px auto;
-            max-width: 800px;
-        }
-
-        .foxy-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin: 20px auto;
-            display: block;
-            box-shadow: 0 0 8px 2px #ff8f00;
-        }
-
-        .arco {
-            background: #263238;
-            border-radius: 10px;
-            margin: 20px auto;
-            padding: 20px;
+        .arc-list {
             display: flex;
-            align-items: center;
-            justify-content: start;
-            max-width: 900px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-            text-decoration: none;
-            color: #fff;
-            transition: transform 0.3s ease, box-shadow 0.5s ease;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
         }
 
-        .arco:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.6);
-        }
-
-        .arco img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-
-        .info {
+        .arc {
+            width: 225px;
+            height: 440px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            flex-grow: 1;
+            justify-content: space-between;
+            background: #181818;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: #fff;
+            align-items: center;
         }
 
-        .info h3 {
-            font-size: 1.8rem;
+        .arc:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.5);
+        }
+
+        .arc img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .arc-info, .info {
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+        }
+
+        .arc-info h3 {
             margin: 0;
+            font-size: 1.3rem;
+        }
+
+        .important-info {
+            background: #202020;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 750px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .important-info p {
+            margin: 8px 0;
+            color: #ddd;
+        }
+
+        .pix-info {
+            font-weight: bold;
+            color: #00ddff;
         }
     </style>
     <script src="imagem.js"></script>
 </head>
 
+
+
 <body>
+    <header>
+        <h1>One Pace - Legendas PT-BR</h1>
+        <p>Projeto que deixa o anime One Piece igual ao mangá</p>
+        <div class="important-info">
+            <p><strong>Senha (Arcos 1-6):</strong> otto.fansub@2024</p>
+            <p class="pix-info">PIX para apoiar o projeto: legendasbronepace@gmail.com</p>
+        </div>
+    </header>
 
-    <h1>One Pace - Legendas em Português</h1>
-    <img src="" alt="Foxy Image" class="foxy-img">
-
-    <p><strong>Projeto que deixa o One Piece igual ao mangá.</strong></p>
-    <p class="password-info"><strong>Senha para os arquivos (Arcos 1 a 6): otto.fansub@2024</strong></p>
-    <p class="password-info"><strong>PIX para ajudar o projeto: legendasbronepace@gmail.com</strong></p>
-
-     <h2 class="section-title">Especiais</h2>
-     
-      <a href="https://drive.google.com/drive/folders/19PkCyZ1qRSB6zmvFaIQ1mOHbZbdUZIuO?usp=sharing" class="arco">
+    <div class="container">
+        <h2 class="section-title">Especiais</h2>
+        <div class="arc-list">
+            
+            
+      <a href="https://drive.google.com/drive/folders/19PkCyZ1qRSB6zmvFaIQ1mOHbZbdUZIuO?usp=sharing" class="arc">
         <img src="https://staticg.sportskeeda.com/editor/2022/08/98697-16616146547406-1920.jpg?w=640" alt="Episódio 0">
         <div class="info">
             <h3> Episódio 0</h3>
         </div>
     </a>
 
-    <a href="https://drive.google.com/drive/folders/1Uv38dQhzF-WTGH3KqOJt_XrCiDfrOjhq?usp=sharing" class="arco">
+    <a href="https://drive.google.com/drive/folders/1Uv38dQhzF-WTGH3KqOJt_XrCiDfrOjhq?usp=sharing" class="arc">
         <img src="https://pbs.twimg.com/media/GaTIOSpW8AAUMia.jpg:large" alt="Fan Letter">
         <div class="info">
             <h3>One Piece Fan Letter</h3>
         </div>
     </a>
-    
-    <p><strong>Recomendação:</strong></p>
-    
-   <p><strong> Episódio 0 após Impel Down</strong></p>
-   <p><strong> One Piece Fan letter após Return to Sabaody</strong></p>
-    
 
+<div class="recommendation">
+    <h3>Recomendação:</h3>
+    <h3><p>Episódio 0 após Impel Down</p></h3>
+    <h3><p>One Piece Fan Letter após Return to Sabaody</p></h3>
+</div>
+        </div>
+    </div>
 </body>
 
 </html>
