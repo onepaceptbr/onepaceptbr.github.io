@@ -52,9 +52,7 @@
         }
         
         .recommendation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     margin-top: 20px;
 }
 
@@ -156,31 +154,30 @@
     </header>
 
     <div class="container">
-        <h2 class="section-title">Especiais</h2>
-        <div class="arc-list">
-            
-            
-      <a href="https://drive.google.com/drive/folders/19PkCyZ1qRSB6zmvFaIQ1mOHbZbdUZIuO?usp=sharing" class="arc">
-        <img src="https://staticg.sportskeeda.com/editor/2022/08/98697-16616146547406-1920.jpg?w=640" alt="Episódio 0">
-        <div class="info">
-            <h3> Episódio 0</h3>
-        </div>
-    </a>
+    <h2 class="section-title">Especiais</h2>
+    <div class="arc-list">
+        <a href="https://drive.google.com/drive/folders/19PkCyZ1qRSB6zmvFaIQ1mOHbZbdUZIuO?usp=sharing" class="arc">
+            <img src="https://staticg.sportskeeda.com/editor/2022/08/98697-16616146547406-1920.jpg?w=640" alt="Episódio 0">
+            <div class="info">
+                <h3> Episódio 0</h3>
+            </div>
+        </a>
 
-    <a href="https://drive.google.com/drive/folders/1Uv38dQhzF-WTGH3KqOJt_XrCiDfrOjhq?usp=sharing" class="arc">
-        <img src="https://pbs.twimg.com/media/GaTIOSpW8AAUMia.jpg:large" alt="Fan Letter">
-        <div class="info">
-            <h3>One Piece Fan Letter</h3>
-        </div>
-    </a>
-
-<div class="recommendation">
-    <h3>Recomendação:</h3>
-    <h3><p>Episódio 0 após Impel Down</p></h3>
-    <h3><p>One Piece Fan Letter após Return to Sabaody</p></h3>
-</div>
-        </div>
+        <a href="https://drive.google.com/drive/folders/1Uv38dQhzF-WTGH3KqOJt_XrCiDfrOjhq?usp=sharing" class="arc">
+            <img src="https://pbs.twimg.com/media/GaTIOSpW8AAUMia.jpg:large" alt="Fan Letter">
+            <div class="info">
+                <h3>One Piece Fan Letter</h3>
+            </div>
+        </a>
     </div>
+
+    <!-- Mover a recomendação para fora da div.arc-list -->
+    <div class="recommendation">
+        <h3>Recomendação:</h3>
+        <p>Episódio 0 após Impel Down</p>
+        <p>One Piece Fan Letter após Return to Sabaody</p>
+    </div>
+</div>
 </body>
 
 </html>
