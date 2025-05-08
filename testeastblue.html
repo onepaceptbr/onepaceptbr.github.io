@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="icone_one_pace.png" rel="icon" type="image/png" />
   <title>One Pace - Legendas PT-BR</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -128,14 +128,16 @@
     .popup {
       display: none;
       position: absolute;
-      z-index: 1000;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       background: #1e1e1e;
       padding: 15px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
       flex-direction: column;
       gap: 10px;
-      transform: translate(-50%, -50%);
+      z-index: 10;
     }
 
     .popup a {
@@ -173,42 +175,44 @@
     <h2 class="section-title">East Blue</h2>
     <div class="arc-list">
 
+      <!-- Arco 1 - Link direto -->
       <a href="https://nyaa.si/view/1966911" class="arc" target="_blank">
         <img src="Imagens/1 - Romance Dawn.png" alt="Romance Dawn" />
         <div class="info"><h3>Arco 1 - Romance Dawn</h3></div>
       </a>
 
-      <div class="arc" onclick="abrirPopup(event, 'https://drive.google.com/file/d/1xAGszl9-0r7CWQPIyv8orLWn-YnZn6Dn/view?usp=sharing')">
+      <!-- Arcos com popup -->
+      <div class="arc" onclick="abrirPopup(this, 'https://drive.google.com/file/d/1xAGszl9-0r7CWQPIyv8orLWn-YnZn6Dn/view?usp=sharing')">
         <img src="Imagens/2 - Orange Town.png" />
         <div class="info"><h3>Arco 2 - Orange Town</h3></div>
       </div>
 
-      <div class="arc" onclick="abrirPopup(event, 'https://drive.google.com/file/d/1sOkAfncbFhtXTO9MDr_1a_seyP8iXJjk/view?usp=sharing')">
+      <div class="arc" onclick="abrirPopup(this, 'https://drive.google.com/file/d/1sOkAfncbFhtXTO9MDr_1a_seyP8iXJjk/view?usp=sharing')">
         <img src="Imagens/3 - Syrup Village.png" />
         <div class="info"><h3>Arco 3 - Syrup Village</h3></div>
       </div>
 
-      <div class="arc" onclick="abrirPopup(event, 'https://drive.google.com/file/d/1QLuH_M1odRtdDO03nZO8-RjN863m1CAt/view?usp=sharing')">
+      <div class="arc" onclick="abrirPopup(this, 'https://drive.google.com/file/d/1QLuH_M1odRtdDO03nZO8-RjN863m1CAt/view?usp=sharing')">
         <img src="Imagens/4 - Gaimon.png" />
         <div class="info"><h3>Arco 4 - Gaimon</h3></div>
       </div>
 
-      <div class="arc" onclick="abrirPopup(event, 'https://drive.google.com/file/d/1l0PzkuQ_kC_vIly5w4RYcwLfseIGu01I/view?usp=sharing')">
+      <div class="arc" onclick="abrirPopup(this, 'https://drive.google.com/file/d/1l0PzkuQ_kC_vIly5w4RYcwLfseIGu01I/view?usp=sharing')">
         <img src="Imagens/5 - Baratie.png" />
         <div class="info"><h3>Arco 5 - Baratie</h3></div>
       </div>
 
-      <div class="arc" onclick="abrirPopup(event, 'https://drive.google.com/file/d/1CYjpCaHeml-W1Fr4p9Ag0inFQN9Gf8fK/view?usp=sharing')">
+      <div class="arc" onclick="abrirPopup(this, 'https://drive.google.com/file/d/1CYjpCaHeml-W1Fr4p9Ag0inFQN9Gf8fK/view?usp=sharing')">
         <img src="Imagens/6 - Arlong Park.png" />
         <div class="info"><h3>Arco 6 - Arlong Park</h3></div>
       </div>
 
-      <div class="arc" onclick="abrirPopup(event, 'https://drive.google.com/drive/folders/1GK7d8KV3xQYEbHs-42Kn-C4iFY3VcT05?usp=drive_link')">
+      <div class="arc" onclick="abrirPopup(this, 'https://drive.google.com/drive/folders/1GK7d8KV3xQYEbHs-42Kn-C4iFY3VcT05?usp=drive_link')">
         <img src="Imagens/6.5 - The Adventures of Buggy's Crew.png" />
         <div class="info"><h3>Arco 6.5 - Buggy's Crew</h3></div>
       </div>
 
-      <div class="arc" onclick="abrirPopup(event, 'https://drive.google.com/drive/folders/1YrNrJd17hCVmb0HDi9kplRWniEThW2Se?usp=drive_link')">
+      <div class="arc" onclick="abrirPopup(this, 'https://drive.google.com/drive/folders/1YrNrJd17hCVmb0HDi9kplRWniEThW2Se?usp=drive_link')">
         <img src="Imagens/7 - Loguetown.png" />
         <div class="info"><h3>Arco 7 - Loguetown</h3></div>
       </div>
@@ -222,12 +226,30 @@
   </div>
 
   <script>
-    function abrirPopup(event, linkEpisodio) {
+    let currentArc = null;
+
+    function abrirPopup(arcElement, linkEpisodio) {
       event.stopPropagation();
       const popup = document.getElementById('popup');
       const episodioLink = document.getElementById('linkEpisodio');
       episodioLink.href = linkEpisodio;
 
-      const rect = event.currentTarget.getBoundingClientRect();
-      const centerX = rect.left + rect.width / 2 + window.scrollX;
-      const centerY = rect.top + rect.height / 2 + window.scrollY;
+      if (currentArc && currentArc.contains(popup)) {
+        currentArc.removeChild(popup);
+      }
+
+      arcElement.appendChild(popup);
+      popup.style.display = 'flex';
+      currentArc = arcElement;
+    }
+
+    document.addEventListener('click', function (event) {
+      const popup = document.getElementById('popup');
+      if (!popup.contains(event.target)) {
+        popup.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+
+</html>
