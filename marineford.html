@@ -2,194 +2,242 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="icone_one_pace.png" rel="icon" type="image/png">
-    <title>One Pace - Legendas PT-BR</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(120deg, #121212, #242424);
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="icone_one_pace.png" rel="icon" type="image/png" />
+  <title>One Pace - Legendas PT-BR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #121212, #242424);
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
 
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            background: rgba(0, 0, 0, 0.7);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-        }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    }
 
-        header h1 {
-            font-size: 3rem;
-            color: #00aaff;
-            text-shadow: 2px 2px 4px #000;
-            margin: 0;
-        }
-        
-        .break {
-            flex-basis: 100%;
-            height: 0;
-        }
+    header h1 {
+      font-size: 3rem;
+      color: #00aaff;
+      text-shadow: 2px 2px 4px #000;
+      margin: 0;
+    }
 
-        header p {
-            font-size: 1.1rem;
-            margin-top: 10px;
-            color: #b0b0b0;
-        }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      color: #b0b0b0;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .section-title {
-            font-size: 2rem;
-            color: #00aaff;
-            margin: 50px 0 30px;
-            text-shadow: 1px 1px 2px #000;
-            text-align: center;
-        }
+    .section-title {
+      font-size: 2rem;
+      color: #00aaff;
+      margin: 50px 0 30px;
+      text-shadow: 1px 1px 2px #000;
+      text-align: center;
+    }
 
-        .arc-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 25px;
-        }
+    .arc-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
 
-        .arc {
-            width: 225px;
-            height: 440px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            background: #181818;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.4);
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-decoration: none;
-            color: #fff;
-            align-items: center;
-        }
+    .arc {
+      width: 225px;
+      height: 440px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #181818;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: #fff;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+    }
 
-        .arc:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.5);
-        }
+    .arc:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    }
 
-        .arc img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
+    .arc img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-        .arc-info, .info {
-            padding: 15px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 60px;
-        }
+    .info {
+      padding: 15px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+    }
 
-        .arc-info h3 {
-            margin: 0;
-            font-size: 1.3rem;
-        }
+    .info h3 {
+      margin: 0;
+      font-size: 1.3rem;
+    }
 
-        .important-info {
-            background: #202020;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 20px auto;
-            max-width: 750px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        }
+    .important-info {
+      background: #202020;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 750px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
 
-        .important-info p {
-            margin: 8px 0;
-            color: #ddd;
-        }
+    .important-info p {
+      margin: 8px 0;
+      color: #ddd;
+    }
 
-        .pix-info {
-            font-weight: bold;
-            color: #00ddff;
-        }
-    </style>
-    <script src="imagem.js"></script>
+    .pix-info {
+      font-weight: bold;
+      color: #00ddff;
+    }
+
+    .popup {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      flex-direction: column;
+      gap: 10px;
+      z-index: 10;
+    }
+
+    .popup a {
+      background: #00aaff;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      text-align: center;
+      min-width: 100px;
+    }
+
+    .popup a:last-child {
+      background: #00cc66;
+    }
+
+    .popup a:hover {
+      opacity: 0.9;
+    }
+  </style>
 </head>
 
-
-
 <body>
-    <header>
-        <h1>One Pace - Legendas PT-BR</h1>
-        <p>Projeto que deixa o anime One Piece igual ao mangá</p>
-        <div class="important-info">
-            <p><strong>Senha (Arcos 2-6):</strong> otto.fansub@2024</p>
-            <p class="pix-info">PIX para apoiar o projeto: legendasbronepace@gmail.com</p>
-        </div>
-    </header>
-
-    <div class="container">
-        <h2 class="section-title">Marineford</h2>
-        <div class="arc-list">
-            
-            
-     <a href="https://drive.google.com/drive/folders/193e4Tw6yKr6Y2uu6F_xgH3tzXZSyjv9A?usp=sharing" class="arc">
-        <img src="Imagens/20 - Sabaody Archipelago.png">
-        <div class="info">
-            <h3>Arco 20 - Sabaody Archipelago</h3>
-        </div>
-    </a>
-
-    <a href="https://drive.google.com/drive/folders/1WDntFt2JMvOFxNNNUTk1VKY0R1D5zW-w?usp=sharing" class="arc">
-        <img src="Imagens/21 - Amazon Lily.png" alt="Amazon Lily">
-        <div class="info">
-            <h3>Arco 21 - Amazon Lily</h3>
-        </div>
-    </a>
-
-    <a href="https://drive.google.com/drive/folders/1CJEqD732E_FAEIzi7HOTMRUPOMEFy-aQ?usp=sharing" class="arc">
-        <img src="Imagens/22 - Impel Down.png" alt="Impel Down">
-        <div class="info">
-            <h3>Arco 22 - Impel Down</h3>
-        </div>
-    </a>
-    
-    <a href="https://drive.google.com/drive/folders/1Dgwa53hqYJ8DV6Nxr4Ww6HbBfR_HRzQc?usp=sharing" class="arc">
-        <img src="Imagens/22.5 - The Adventures of the Straw Hats.png">
-        <div class="info">
-            <h3>Arco 22.5 - The Adventures of the Straw Hats</h3>
-        </div>
-    </a>
-    
-      <a href="https://drive.google.com/drive/folders/1Gd1CwJFUMVEESJXcp55dlV6oUDmpP0RQ?usp=sharing" class="arc">
-        <img src="Imagens/23 - Marineford.png" alt="Marineford">
-        <div class="info">
-            <h3>Arco 23 - Marineford</h3>
-        </div>
-    </a>    
-
-     <a href="https://drive.google.com/drive/folders/1dQWpxtAZcVfXsRqflNVMOzHCPkoTipMB?usp=sharing" class="arc">
-        <img src="Imagens/24 - Post-War.png">
-        <div class="info">
-            <h3>Arco 24 - Post-War</h3>
-        </div>
-    </a> 
-        </div>
+  <header>
+    <h1>One Pace - Legendas PT-BR</h1>
+    <p>Projeto que deixa o anime One Piece igual ao mangá</p>
+    <div class="important-info">
+      <p><strong>Senha (Arcos 2-6):</strong> otto.fansub@2024</p>
+      <p class="pix-info">PIX para apoiar o projeto: legendasbronepace@gmail.com</p>
     </div>
+  </header>
+
+  <div class="container">
+    <h2 class="section-title">Marineford</h2>
+    <div class="arc-list">
+
+<div class="arc" onclick="abrirPopup(this, 'https://nyaa.si/view/1167639', 'https://drive.google.com/drive/folders/1-elhWG655zJKUEpTdh25LsbnlQ-Rx7NG?usp=sharing')">
+        <img src="Imagens/20 - Sabaody Archipelago.png" />
+        <div class="info"><h3>Arco 20 - Sabaody Archipelago</h3></div>
+      </div>
+      
+      <div class="arc" onclick="abrirPopup(this, 'https://nyaa.si/view/1140828', 'https://drive.google.com/drive/folders/1-i8blh_fRWjag4B_gySYmK0aABIES1HG?usp=sharing')">
+        <img src="Imagens/21 - Amazon Lily.png" />
+        <div class="info"><h3>Arco 21 - Amazon Lily</h3></div>
+      </div>
+      
+      <div class="arc" onclick="abrirPopup(this, 'https://nyaa.si/view/1140836', 'https://drive.google.com/drive/folders/1-ktbonZpkWu3MDnHCUaaMQp45CgvWO4t?usp=sharing')">
+        <img src="Imagens/22 - Impel Down.png" />
+        <div class="info"><h3>Arco 22 - Impel Down</h3></div>
+      </div>
+      
+      <div class="arc" onclick="abrirPopup(this, 'https://nyaa.si/view/1796385', 'https://drive.google.com/drive/folders/1019fNv55FqIAG7GU4rsxJM_62HVKr9S4?usp=sharing')">
+        <img src="Imagens/22.5 - The Adventures of the Straw Hats.png" />
+        <div class="info"><h3>Arco 22.5 - The Adventures of the Straw Hats</h3></div>
+      </div>
+      
+      <div class="arc" onclick="abrirPopup(this, 'https://nyaa.si/view/1287648', 'https://drive.google.com/drive/folders/105LxQOh3l58DS_MgB_i5onaRNcQheNrY?usp=sharing')">
+        <img src="Imagens/23 - Marineford.png" />
+        <div class="info"><h3>Arco 23 - Marineford</h3></div>
+      </div>
+      
+      <div class="arc" onclick="abrirPopup(this, ' https://nyaa.si/?f=0&c=0_0&q=one+pace+post+war', 'https://drive.google.com/drive/folders/10928v4_qkWERla3eHFsq7c3wIk43-XGj?usp=sharing')">
+        <img src="Imagens/24 - Post-War.png" />
+        <div class="info"><h3>Arco 24 - Post-War</h3></div>
+      </div>
+
+  <div id="popup" class="popup">
+    <a id="linkEpisodio" href="#" target="_blank">Episódios</a>
+    <a id="linkLegenda" href="#" target="_blank">Legendas</a>
+  </div>
+
+  <script>
+    let currentArc = null;
+
+    function abrirPopup(arcElement, linkEpisodio, linkLegenda) {
+      event.stopPropagation();
+      const popup = document.getElementById('popup');
+      const episodioLink = document.getElementById('linkEpisodio');
+      const legendaLink = document.getElementById('linkLegenda');
+
+      episodioLink.href = linkEpisodio;
+      legendaLink.href = linkLegenda;
+
+      if (currentArc && currentArc.contains(popup)) {
+        currentArc.removeChild(popup);
+      }
+
+      arcElement.appendChild(popup);
+      popup.style.display = 'flex';
+      currentArc = arcElement;
+    }
+
+    document.addEventListener('click', function (event) {
+      const popup = document.getElementById('popup');
+      if (!popup.contains(event.target)) {
+        popup.style.display = 'none';
+      }
+    });
+    
+  </script>
 </body>
 
 </html>
