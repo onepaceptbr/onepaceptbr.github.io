@@ -2,182 +2,231 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="icone_one_pace.png" rel="icon" type="image/png">
-    <title>One Pace - Legendas PT-BR</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(120deg, #121212, #242424);
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="icone_one_pace.png" rel="icon" type="image/png" />
+  <title>One Pace - Legendas PT-BR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #121212, #242424);
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
 
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            background: rgba(0, 0, 0, 0.7);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-        }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    }
 
-        header h1 {
-            font-size: 3rem;
-            color: #00aaff;
-            text-shadow: 2px 2px 4px #000;
-            margin: 0;
-        }
-        
-        .break {
-            flex-basis: 100%;
-            height: 0;
-        }
+    header h1 {
+      font-size: 3rem;
+      color: #00aaff;
+      text-shadow: 2px 2px 4px #000;
+      margin: 0;
+    }
 
-        header p {
-            font-size: 1.1rem;
-            margin-top: 10px;
-            color: #b0b0b0;
-        }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      color: #b0b0b0;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .recommendation {
-    text-align: center;
-    margin-top: 20px;
-}
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-.recommendation p {
-    margin: 5px 0;
-    font-size: 1.1rem;
-    color: #ddd;
-}
+    .section-title {
+      font-size: 2rem;
+      color: #00aaff;
+      margin: 50px 0 30px;
+      text-shadow: 1px 1px 2px #000;
+      text-align: center;
+    }
 
-        .section-title {
-            font-size: 2rem;
-            color: #00aaff;
-            margin: 50px 0 30px;
-            text-shadow: 1px 1px 2px #000;
-            text-align: center;
-        }
+    .arc-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
 
-        .arc-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 25px;
-        }
+    .arc {
+      width: 225px;
+      height: 440px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #181818;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: #fff;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+    }
 
-        .arc {
-            width: 225px;
-            height: 440px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            background: #181818;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.4);
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-decoration: none;
-            color: #fff;
-            align-items: center;
-        }
+    .arc:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    }
 
-        .arc:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.5);
-        }
+    .arc img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-        .arc img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
+    .info {
+      padding: 15px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+    }
 
-        .arc-info, .info {
-            padding: 15px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 60px;
-        }
+    .info h3 {
+      margin: 0;
+      font-size: 1.3rem;
+    }
 
-        .arc-info h3 {
-            margin: 0;
-            font-size: 1.3rem;
-        }
+    .important-info {
+      background: #202020;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 750px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
 
-        .important-info {
-            background: #202020;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 20px auto;
-            max-width: 750px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        }
+    .important-info p {
+      margin: 8px 0;
+      color: #ddd;
+    }
 
-        .important-info p {
-            margin: 8px 0;
-            color: #ddd;
-        }
+    .pix-info {
+      font-weight: bold;
+      color: #00ddff;
+    }
 
-        .pix-info {
-            font-weight: bold;
-            color: #00ddff;
-        }
-    </style>
-    <script src="imagem.js"></script>
+    .popup {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      flex-direction: column;
+      gap: 10px;
+      z-index: 10;
+    }
+
+    .popup a {
+      background: #00aaff;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      text-align: center;
+      min-width: 100px;
+    }
+
+    .popup a:last-child {
+      background: #00cc66;
+    }
+
+    .popup a:hover {
+      opacity: 0.9;
+    }
+  </style>
 </head>
 
-
-
 <body>
-    <header>
-        <h1>One Pace - Legendas PT-BR</h1>
-        <p>Projeto que deixa o anime One Piece igual ao mangá</p>
-        <div class="important-info">
-            <p><strong>Senha (Arcos 2-6):</strong> otto.fansub@2024</p>
-            <p class="pix-info">PIX para apoiar o projeto: legendasbronepace@gmail.com</p>
-        </div>
-    </header>
+  <header>
+    <h1>One Pace - Legendas PT-BR</h1>
+    <p>Projeto que deixa o anime One Piece igual ao mangá</p>
+    <div class="important-info">
+      <p><strong>Senha (Arcos 2-6):</strong> otto.fansub@2024</p>
+      <p class="pix-info">PIX para apoiar o projeto: legendasbronepace@gmail.com</p>
+    </div>
+  </header>
 
-    <div class="container">
+  <div class="container">
     <h2 class="section-title">Especiais</h2>
     <div class="arc-list">
-        <a href="https://drive.google.com/drive/folders/19PkCyZ1qRSB6zmvFaIQ1mOHbZbdUZIuO?usp=sharing" class="arc">
-            <img src="Imagens/episódio 0.png" alt="Episódio 0">
-            <div class="info">
-                <h3> Episódio 0</h3>
-            </div>
-        </a>
 
-        <a href="https://drive.google.com/drive/folders/1Uv38dQhzF-WTGH3KqOJt_XrCiDfrOjhq?usp=sharing" class="arc">
-            <img src="Imagens/Fan Letter.png" alt="Fan Letter">
-            <div class="info">
-                <h3>One Piece Fan Letter</h3>
-            </div>
-        </a>
-    </div>
-
-    <!-- Mover a recomendação para fora da div.arc-list -->
-    <div class="recommendation">
+<div class="arc" onclick="abrirPopup(this, 'https://nyaa.si/view/554204', 'https://drive.google.com/drive/folders/1TFjKt_4UreHRw0CpWK8BEpVHGrMN8_PH')">
+        <img src="episódio 0.png" />
+        <div class="info"><h3>Capítulo 0</h3></div>
+      </div>
+      
+      <div class="arc" onclick="abrirPopup(this, 'https://nyaa.si/view/1905874', 'https://drive.google.com/drive/folders/1TLkgf0LvFQ_KR_vZunMqWmQvcpsdOxTU')">
+        <img src="Imagens/Fan Letter.png" />
+        <div class="info"><h3>One Piece Fan Letter</h3></div>
+      </div>
+      
+        <div class="recommendation">
         <h3>Recomendação:</h3>
         <p>Episódio 0 após Impel Down</p>
         <p>One Piece Fan Letter após Return to Sabaody</p>
     </div>
-</div>
+
+      
+
+
+  <div id="popup" class="popup">
+    <a id="linkEpisodio" href="#" target="_blank">Episódios</a>
+    <a id="linkLegenda" href="#" target="_blank">Legendas</a>
+  </div>
+
+  <script>
+    let currentArc = null;
+
+    function abrirPopup(arcElement, linkEpisodio, linkLegenda) {
+      event.stopPropagation();
+      const popup = document.getElementById('popup');
+      const episodioLink = document.getElementById('linkEpisodio');
+      const legendaLink = document.getElementById('linkLegenda');
+
+      episodioLink.href = linkEpisodio;
+      legendaLink.href = linkLegenda;
+
+      if (currentArc && currentArc.contains(popup)) {
+        currentArc.removeChild(popup);
+      }
+
+      arcElement.appendChild(popup);
+      popup.style.display = 'flex';
+      currentArc = arcElement;
+    }
+
+    document.addEventListener('click', function (event) {
+      const popup = document.getElementById('popup');
+      if (!popup.contains(event.target)) {
+        popup.style.display = 'none';
+      }
+    });
+    
+  </script>
 </body>
 
 </html>
